@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#4f46e5"><title>QuickNotes</title><link rel="stylesheet" href="style.css">
+</head>
+<body><main class="app">
+<header><a class="logo" href="#">✦ QuickNotes</a><button id="exportBtn" class="outline">↓ Export notes</button></header>
+<section class="intro"><p class="eyebrow">YOUR LITTLE SPACE</p><h1>Thoughts worth <span>keeping.</span></h1><p class="muted">Capture ideas, save reminders, and find them whenever you need.</p></section>
+<section class="editor"><form id="noteForm"><label class="sr" for="title">Title</label><input id="title" maxlength="70" placeholder="Give your note a title..." required><label class="sr" for="body">Note content</label><textarea id="body" maxlength="2000" rows="4" placeholder="Start writing..." required></textarea><div class="editor-foot"><small id="count">0 / 2000</small><button class="primary">+ Save note</button></div></form></section>
+<section class="collection"><div class="heading"><div><p class="eyebrow">YOUR COLLECTION</p><h2>My notes <small id="total">0</small></h2></div><input id="search" type="search" placeholder="⌕  Search notes..." aria-label="Search notes"></div>
+<nav><button class="filter active" data-filter="all">All notes</button><button class="filter" data-filter="pinned">★ Pinned</button></nav>
+<div id="grid" class="grid"></div><p id="empty" class="empty">No notes yet. Add your first thought above ✦</p></section>
+<footer>Simple notes. Less clutter. More clarity.</footer></main><script src="app.js"></script></body></html>
